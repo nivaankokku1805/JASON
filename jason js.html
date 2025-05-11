@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        var myObj = {name:"Nivaan",age:10,grade:5};
+        var myJSON = JSON.stringify(myObj);//converts object to JASON for sending data
+        var newObj = JSON.parse(myJSON);//converts JASON into object while reversing data
+        document.getElementById("result").innerHTML = newObj.name
+    </script>
+    
+</body>
+</html>
